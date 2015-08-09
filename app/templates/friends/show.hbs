@@ -1,9 +1,10 @@
-<ul>
-  <li>First name: {{model.firstName}}</li>
-  <li>Last name: {{model.lastName}}</li>
-  <li>Email: {{model.email}}</li>
+<p></p>
+<ul class="vcard">
+  <li class="fn">First name: {{model.firstName}}</li>
+  <li class="fn">Last name: {{model.lastName}}</li>
+  <li class="email">Email: {{model.email}}</li>
   <li>Twitter: {{model.twitter}}</li>
-  <li>{{link-to 'Edit info' 'friends.edit' model}} </li>
-  <li><a href="#" {{action "delete" model}}>Delete</a></li>
 </ul>
-{{link-to 'Show all friends' 'friends'}}
+<p>{{link-to 'Edit info' 'friends.edit' model}} </p>
+<p><a href="#" {{action "delete" model}}>Delete</a></p>
+<p>{{link-to 'Show all friends' 'friends'}}</p>
